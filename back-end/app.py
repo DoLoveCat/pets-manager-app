@@ -20,6 +20,7 @@ db = SQLAlchemy(app)
 
 import routes
 #since we dont return anything from routes.py
+from routes import *
 
 with app.app_context():
     db.create_all()
